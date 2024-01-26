@@ -1,0 +1,51 @@
+FUNCTION dot_product (V1, V2 ) : FLOAT
+VAR
+    n: INTEGER;
+    V1 [n], V2[n] : FLOAT;
+    i,j: =0 :INTEGER;
+    ps:=0 :FLOAT;
+BEGIN
+      FOR i FROM 0 TO n-1 STEP 1  DO
+           FOR j FROM 0 TO n-1 STEP 1  DO
+             ps:=ps+(V1[i]*V2[j]);
+
+           END_FOR 
+
+      END_FOR
+    
+    RETURN ps ;
+END 
+
+VAR 
+
+   n: INTEGER:
+
+   Read  (" Entrer le nombre de vecteur  ")
+   write (n)
+
+   FOR i FROM 0 TO max n-1 step 1 DO
+      
+       Read  (" Entrer la valeur de x du vecteur V1 ")
+       write (X1)
+        Read  (" Entrer la valeur de y de V1 ")
+       write (Y1) 
+       Read  (" Entrer la valeur de X2 du vecteur V2 ")
+       write (X2)
+        Read  (" Entrer la valeur de Y2 de V2 ")
+       write (Y2) 
+    END_FOR 
+       
+    if dot_product(V1,V2)==0 {
+    
+    RETURN 1; 
+
+    }
+
+    else {
+
+    RETURN 0;
+    
+    }
+
+END
+

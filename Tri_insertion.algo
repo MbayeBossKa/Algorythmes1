@@ -1,0 +1,35 @@
+FUNCTION Tri_Insertion (Tab, n) : INTEGER
+VAR
+    n: INTEGER;
+    Tab [n] : INTEGER;
+    i,Pivot: =0 :INTEGER;
+
+BEGIN
+ 
+ FOR i FROM 0 TO max n-1 step 1 DO
+ Pivot=T[i];
+ j=i;
+      WHILE (Tab[j+1]<Pivot)
+         
+        T[j]=Tab[j+1];
+         j--;
+
+      END_WHILE
+ END_FOR   
+    RETURN Tab
+END 
+
+VAR 
+
+   n: INTEGER;
+   i : INTEGER; 
+   Read  (" Entrer le nombre d'elements dans le tableau ")
+   write (n)
+
+   FOR i FROM 0 TO max n-1 step 1 DO
+      
+       Read  (" Entrer la valeur de X de la position i du tableau ")
+       write (Tab[i])
+
+    END_FOR 
+       
